@@ -7,7 +7,7 @@ ReactDOM.render(
   <React.StrictMode>
     <div>
               
-      <p className ="Par"> Hello Every One ! </p>
+      <p className ="Par"> Good Day! </p>
       <App />
       
     </div>

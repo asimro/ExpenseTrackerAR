@@ -1,15 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Child from "./components/child.js";
+import Toggle from "./components/toggle.js";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> My first recact application in BBC Class </h1>
-        <p> Good Day  </p>
-      </header>
+      
+      
+       
+      
+      <Toggle/>
     </div>
   );
+
+
 }
 
 export default App;

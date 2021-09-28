@@ -1,0 +1,17 @@
+.green{
+  width: 200px;
+  height: 100px;
+  background-color: green;
+}
+
+.red{
+  width: 200px;
+  height: 100px;
+  background-color:red;
+}
+
+.button{
+  width: 60px;
+  height: 30px;
+  background-color:rgb(14, 218, 245);
+}
