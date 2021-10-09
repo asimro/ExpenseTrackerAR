@@ -5,7 +5,7 @@ function Child() {
     const [counterValue, setcounterValue] = useState(10)
     return (
         <div>
-            <h3>Counter </h3>
+            <h3> Counter </h3>
             <p>
                 {counterValue}
                 <br />
@@ -23,7 +23,7 @@ function Child() {
                 <br />
             </p>
             <Grandchild />
-        </div>
+        </div >
     )
 }
 export default Child;

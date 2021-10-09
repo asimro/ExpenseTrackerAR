@@ -5,18 +5,20 @@ function Toggle() {
     const [toggleValue, settoggleValue] = useState(false);
 
     return (
-        <div>
-            {
-                toggleValue ? "This is true" : "This is false"
-            }
-             <br />
-             <div className={toggleValue ? "green" : "red"}>
 
-             </div>
+        <div className={"div2"}>
+
+            <div className={toggleValue ? "green" : "red"}>
+                {
+                    toggleValue ? "This is true" : "This is false"
+                }
+            </div>
+           
             <button onClick={() => settoggleValue(!toggleValue)}>
-               <div className="button"> Toggle </div>
+                <div className="button"> Toggle </div>
             </button>
         </div>
+
     )
 }
 export default Toggle;

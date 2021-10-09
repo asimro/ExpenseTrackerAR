@@ -2,13 +2,15 @@ import Child from "./components/child.js";
 import Toggle from "./components/toggle.js";
 
 
+
 function App() {
   return (
-    <div className="App">
-      
-      
-       
-      
+    <div>
+        
+      <Child/>
+      <br />
+      <br />
+      <br />
       <Toggle/>
     </div>
   );

@@ -1,17 +1,31 @@
 .green{
-  width: 200px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
   background-color: green;
 }
 
 .red{
-  width: 200px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
   background-color:red;
 }
 
 .button{
   width: 60px;
   height: 30px;
-  background-color:rgb(14, 218, 245);
+  /* background-color:rgb(14, 218, 245); */
+  text-align: center;
+  padding-top: 10px;
+}
+
+.div2{
+ margin-left: 10px;
+}
+
+.App1{
+  background-color: darkturquoise;
+}
+
+h3 {
+  text-align: center
 }
