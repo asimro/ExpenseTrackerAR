@@ -1,17 +1,19 @@
 import Child from "./components/child.js";
 import Toggle from "./components/toggle.js";
+import UseEffect from "./components/useEffecttest.js";
 
 
 
 function App() {
   return (
     <div>
-        
-      <Child/>
+
+      <UseEffect/>  
+      {/* <Child/> */}
       <br />
       <br />
       <br />
-      <Toggle/>
+      {/* <Toggle/> */}
     </div>
   );
 

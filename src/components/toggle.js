@@ -13,8 +13,11 @@ function Toggle() {
                     toggleValue ? "This is true" : "This is false"
                 }
             </div>
-           
-            <button onClick={() => settoggleValue(!toggleValue)}>
+
+            <button
+                onClick={() =>
+                    settoggleValue(!toggleValue)}>
+
                 <div className="button"> Toggle </div>
             </button>
         </div>

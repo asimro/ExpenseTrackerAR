@@ -12,7 +12,7 @@ code {
     monospace;
 }
 p {
-  color: rgba(255, 81, 0, 0.918);
+  color: hsla(13, 90%, 50%, 0.90);
   font-style: oblique;
   font-weight: bold;
   font-size: 30px;
