@@ -1,23 +1,21 @@
-import Child from "./components/child.js";
-import Toggle from "./components/toggle.js";
-import UseEffect from "./components/useEffecttest.js";
-
+import reactDom from 'react-dom';
+import './App.css';
+import React, { useState, useEffect, useContext } from 'react';
 
 
 function App() {
+  let value = useState(188);
   return (
-    <div>
+   
+      <div className="App">
 
-      <UseEffect/>  
-      {/* <Child/> */}
-      <br />
-      <br />
-      <br />
-      {/* <Toggle/> */}
-    </div>
+        <h1>Income & Expense Statement </h1>
+        <br />
+
+      </div>
+   
   );
-
-
 }
 
 export default App;
+
