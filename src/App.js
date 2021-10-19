@@ -1,19 +1,33 @@
-import reactDom from 'react-dom';
 import './App.css';
-import React, { useState, useEffect, useContext } from 'react';
+import React  from 'react';
+
+//import Components 
+import { Header } from './components/Header';
+import { Balance } from './components/Balance';
+import { AccountSummary } from './components/AccountSummary';
+import { TransactionHistory } from './components/TransactionHistory';
+import { AddTransaction } from './components/AddTransaction';
+
+//import the Global Provider 
+import { GlobalProvider } from './context/GlobalState';
 
 
 function App() {
-  let value = useState(188);
+
   return (
-   
-      <div className="App">
+        
+     <GlobalProvider>
 
-        <h1>Income & Expense Statement </h1>
-        <br />
-
+      <Header />
+      <div className="container">
+        <Balance />
+        <AccountSummary />
+        <TransactionHistory />
+        <AddTransaction />
       </div>
-   
+
+    </GlobalProvider>
+    
   );
 }
 
