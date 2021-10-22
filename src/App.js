@@ -1,5 +1,5 @@
 import './App.css';
-import React  from 'react';
+import React from 'react';
 
 //import Components 
 import { Header } from './components/Header';
@@ -13,11 +13,8 @@ import { GlobalProvider } from './context/GlobalState';
 
 
 function App() {
-
   return (
-        
-     <GlobalProvider>
-
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
@@ -25,11 +22,8 @@ function App() {
         <TransactionHistory />
         <AddTransaction />
       </div>
-
     </GlobalProvider>
-    
   );
 }
-
 export default App;
 
