@@ -24,7 +24,7 @@ export const AddTransaction = () => {
 
     return (
         <div>
-            <h3>Add Transaction Here</h3>
+            <h3>Adding New Transactions</h3>
             <form onSubmit={onSubmit}>
                 <div className="form-control">
                     <label htmlFor="description">
@@ -34,7 +34,7 @@ export const AddTransaction = () => {
                         id="description"
                         value={description}
                         onChange={(e) => setDescription (e.target.value) }
-                        placeholder="Transaction Detials"
+                        placeholder="Transaction Details"
                         required = "required"
                     />
                 </div>
@@ -42,7 +42,6 @@ export const AddTransaction = () => {
                 <div className="form-control">
                     <label htmlFor="amount">
                         Amount
-                        {/* <br /> (negative - expense, positive - income) */}
                     </label>
                     <input type ="number"
                         id ="amount"

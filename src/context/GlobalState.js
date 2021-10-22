@@ -1,10 +1,9 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
+
 //create the initial state
-const initialState = {
-    transactions: []
-}
+const initialState = { transactions: [] }
 
 //create the global context 
 export const GlobalContext = createContext(initialState);
@@ -13,7 +12,6 @@ export const GlobalContext = createContext(initialState);
 
 // Create a Provider for the Global Context 
 export const GlobalProvider = ({ children }) => {
-
     const [state, dispatch] = useReducer(AppReducer, initialState)
 
     // Actions
@@ -31,6 +29,7 @@ export const GlobalProvider = ({ children }) => {
         });
     }
 
+    
     return (
         <GlobalContext.Provider value={
             {
