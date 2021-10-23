@@ -28,4 +28,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./build expense-tracker-ethereum.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build ietracker-ar.surge.sh --token ${{secrets.SURGE_TOKEN}}
