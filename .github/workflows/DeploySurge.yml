@@ -17,17 +17,19 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 14
+         node-version: 14
 
-      - name: Install Web Packages
-        run: npm install
-
-
-      - name: Build App
-        run: npm run build
-
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+          
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
+      - uses: borales/actions-yarn@v2.0.0
+        
       - name: Install Surge
-        run: npm install --global surge
+        run: npm install -g surge
 
       - name: Run Surge
         run: surge ./build ietracker-ar.surge.sh --token ${{secrets.SURGE_TOKEN}}
